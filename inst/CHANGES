@@ -1,3 +1,15 @@
+CHANGES FROM VERSION 1.1 ARE AS FOLLOWS
+
+  The plotting points definition for the probability
+  weighted moments method of function gpd has been
+  altered for consistency with quoted source. The
+  maintainer thanks Michelangelo Puliga for reporting
+  this.
+ 
+  The emplot function labelled the axes incorrectly
+  when alog = "y". The maintainer thanks Martin Hanek
+  for reporting this.
+
 CHANGES FROM VERSION 1.0 ARE AS FOLLOWS
 
   The mailing address of the maintainer has changed.

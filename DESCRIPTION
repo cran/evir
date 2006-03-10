@@ -1,6 +1,6 @@
 Package: evir
-Version: 1.1
-Date: 2004-05-05
+Version: 1.2
+Date: 2006-03-10
 Title: Extreme Values in R
 Author: S original (EVIS) by Alexander McNeil 
   <mcneil@math.ethz.ch>, R port by Alec 
@@ -13,4 +13,4 @@ Description: Functions for extreme value theory, which may be
   point processes, gev/gpd distributions.
 License: GPL (Version 2 or above)
 URL: http://www.maths.lancs.ac.uk/~stephena/
-Packaged: Wed May  5 15:29:24 2004; stephena
+Packaged: Thu Mar  9 20:07:03 2006; stephena

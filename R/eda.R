@@ -7,11 +7,15 @@ function(data, alog = "x", labels = TRUE, ...)
     if(labels) {
         xxlab <- "x"
 	yylab <- "1 - F(x)"
-	if(alog != "")
+	if(alog == "x")
 	    xxlab <- paste(xxlab, "(on log scale)")
-	if(alog == "xy" || alog == "yx")
+        if(alog == "y")
 	    yylab <- paste(yylab, "(on log scale)")
-	 title(xlab = xxlab, ylab = yylab)
+	if(alog == "xy" || alog == "yx") {
+	    yylab <- paste(yylab, "(on log scale)")
+            xxlab <- paste(xxlab, "(on log scale)")
+        }
+	title(xlab = xxlab, ylab = yylab)
     }
     invisible(list(x = data, y = ypoints))
 }

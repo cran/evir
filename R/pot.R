@@ -54,7 +54,7 @@ function(data, threshold = NA, nextremes = NA, method = c("ml","pwm"),
         a0 <- xbar
         gamma <- -0.35
         delta <- 0
-        pvec <- ((1:Nu) + delta)/(Nu + delta)
+        pvec <- ((1:Nu) + gamma)/(Nu + delta)
         a1 <- mean(sort(excess) * (1 - pvec))
         xi <- 2 - a0/(a0 - 2 * a1)
         beta <- (2 * a0 * a1)/(a0 - 2 * a1)
