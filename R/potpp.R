@@ -1,4 +1,4 @@
-"plot.pot" <- 
+"plot.potd" <- 
 function(x, ...)
 {
     rawdata <- x$data
@@ -132,7 +132,7 @@ function(data, threshold = NA, nextremes = NA, run = NA,
 	= fit$convergence)
     names(out$par.ests) <- c("xi", "sigma", "mu", "beta")
     names(out$par.ses) <- c("xi", "sigma", "mu")
-    class(out) <- "pot"
+    class(out) <- "potd"
     out
 }
 

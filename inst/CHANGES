@@ -1,3 +1,9 @@
+CHANGES FROM VERSION 1.2 ARE AS FOLLOWS
+
+  The "pot" class has been renamed the "potd" class
+  to avoid conflict with the class of the same name
+  in the R package evd.
+
 CHANGES FROM VERSION 1.1 ARE AS FOLLOWS
 
   The plotting points definition for the probability

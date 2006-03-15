@@ -4,7 +4,7 @@
 \description{
   Fits a Poisson point process to the data, an approach 
   sometimes known as peaks over thresholds (POT), and
-  returns an object of class \code{"pot"}. 
+  returns an object of class \code{"potd"}. 
 }
 \usage{
 pot(data, threshold = NA, nextremes = NA, run = NA, picture = TRUE,
@@ -29,13 +29,13 @@ pot(data, threshold = NA, nextremes = NA, run = NA, picture = TRUE,
   \item{\dots}{arguments passed to \code{optim}}
 }
 \value{
-  An object of class \code{"pot"} describing the fit and including
+  An object of class \code{"potd"} describing the fit and including
   parameter estimates and standard errors. 
 }
 \details{
   Uses \code{optim} for point process likelihood maximization. 
 }
-\seealso{\code{\link{gpd}}, \code{\link{plot.pot}}, 
+\seealso{\code{\link{gpd}}, \code{\link{plot.potd}}, 
   \code{\link{plot.gpd}}, \code{\link{decluster}},
   \code{\link{optim}}, \code{\link{as.POSIXct}}}
 

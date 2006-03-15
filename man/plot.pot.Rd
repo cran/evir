@@ -1,16 +1,16 @@
-\name{plot.pot}
-\alias{plot.pot}
+\name{plot.potd}
+\alias{plot.potd}
 \title{Plot Fitted POT Model}
 \description{
-  The plot method plot.pot provides seven different plots 
+  The plot method plot.potd provides seven different plots 
   for assessing fitted POT model. The user selects the plot
   type from a menu. See the examples below. 
 }
 \usage{
-\method{plot}{pot}(x, \dots)
+\method{plot}{potd}(x, \dots)
 }
 \arguments{
-  \item{x}{a \code{pot} object}
+  \item{x}{an object returned by the function \code{pot}}
   \item{\dots}{other graphics parameters}
 }
 \details{
