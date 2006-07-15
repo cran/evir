@@ -14,9 +14,12 @@ function(series, run = NA, picture = TRUE)
     if(sum(longgaps) <= 1)
         stop("Decluster parameter too large")
     cluster <- c(0, cumsum(longgaps))
-    cmax <- tapply(as.numeric(series), cluster, max)
-    newtimes <- times[match(cmax, series)]
-    newseries <- structure(series[match(cmax, series)], times = newtimes)
+    whichcmax <- tapply(as.numeric(series), cluster, which.max)
+    clen <- cumsum(tapply(as.numeric(series), cluster, length))
+    whichcmax <- whichcmax + c(0, clen[-length(clen)])
+    cmax <- as.numeric(series)[whichcmax]
+    newtimes <- times[whichcmax]
+    newseries <- structure(series[whichcmax], times = newtimes)
     n <- length(as.numeric(newseries))
 
     if(as.posix) {

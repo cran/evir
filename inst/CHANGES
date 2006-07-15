@@ -1,3 +1,16 @@
+CHANGES FROM VERSION 1.3 ARE AS FOLLOWS
+
+  The function decluster could produce incorrect
+  answers if the data contained non-unique values.
+  This has been fixed. The maintainer thanks 
+  Diethelm Wuertz for reporting this.
+
+  The function plot.gev produced plots with incorrect 
+  residuals (uniform rather than exponential) when 
+  used with the Gumbel model. This has been fixed.
+  The maintainer thanks Rico Brandenburg for reporting 
+  this.
+
 CHANGES FROM VERSION 1.2 ARE AS FOLLOWS
 
   The "pot" class has been renamed the "potd" class

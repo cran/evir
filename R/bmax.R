@@ -118,7 +118,7 @@ function(x, ...)
 	else xi <- par.ests["xi"]
 	if(xi != 0)
 	    residuals <- (1 + (xi * (x$data - mu))/sigma)^(-1/xi)
-	else residuals <- exp( - exp( - (x$data - mu)/sigma))
+	else residuals <- exp( - (x$data - mu)/sigma)
 	choices <- c("Scatterplot of Residuals", "QQplot of Residuals")
 	tmenu <- paste("plot:", choices)
 	pick <- 1
