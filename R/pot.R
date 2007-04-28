@@ -161,10 +161,10 @@ function(x, pp, ci.type = c("likelihood","wald"), ci.p = 0.95,
 	cond <- parmax > crit
 	xp <- xp[cond]
 	parmax <- parmax[cond]
-	par(new = T)
+	par(new = TRUE)
 	dolog <- ""
         if(x$alog == "xy" || x$alog == "x") dolog <- "x"
-	plot(xp, parmax, type = "n", xlab = "", ylab = "", axes = F,
+	plot(xp, parmax, type = "n", xlab = "", ylab = "", axes = FALSE,
 	     xlim = range(x$plotmin, x$plotmax),
 	     ylim = range(overallmax, crit), log = dolog)
 	axis(4, at = overallmax - qchisq(c(0.95, 0.99), 1)/2,
@@ -231,11 +231,11 @@ function(x, pp, ci.p = 0.95, like.num = 50)
     cond <- parmax > crit
     xp <- xp[cond]
     parmax <- parmax[cond]
-    par(new = T)
+    par(new = TRUE)
     dolog <- ""
     if(x$alog == "xy" || x$alog == "x") dolog <- "x"
-    plot(xp, parmax, type = "n", xlab = "", ylab = "", axes = F, xlim = 
-	 range(x$plotmin, x$plotmax), ylim =
+    plot(xp, parmax, type = "n", xlab = "", ylab = "", axes = FALSE,
+         xlim = range(x$plotmin, x$plotmax), ylim =
          range(overallmax, crit), log = dolog)
     axis(4, at = overallmax - qchisq(c(0.95, 0.99), 1)/2,
          labels = c("95", "99"), tick = TRUE)

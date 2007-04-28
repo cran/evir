@@ -1,3 +1,24 @@
+Please note that evir is a port and is not under 
+development. All changes are therefore bug fixes
+or maintenance alterations.
+
+CHANGES FROM VERSION 1.4 ARE AS FOLLOWS
+
+  The Depends field has changed: the specification 
+  that R should be version 1.5.0 or later has been 
+  removed (as this is a very old version anyway), 
+  and the library stats (which ts is now merged 
+  into) has been added. Consequently, the call to
+  require in plot.potd has been deleted. 
+
+  There were a couple of T's and F's (rather that 
+  TRUE's or FALSE's) remaining from the port, as 
+  identified up by the new check warnings in R-devel.
+  This has now been corrected. (T or F will ordinarily
+  work in R, but they can be over-written by the user, 
+  and hence they should be avoided for distributed 
+  code.)  
+
 CHANGES FROM VERSION 1.3 ARE AS FOLLOWS
 
   The function decluster could produce incorrect
