@@ -31,11 +31,11 @@ function(data1 = NA, data2 = NA, u1 = NA, u2 = NA, ne1 = NA,
         stop(paste("Enter EITHER a threshold or",
                    "the number of upper extremes for margin 2"))
 
-    out1 <- gpd(data1, threshold = u1, ne = ne1)
+    out1 <- gpd(data1, threshold = u1, nextremes = ne1)
     par.ests1 <- out1$par.ests
     par.ses1 <- out1$par.ses
     
-    out2 <- gpd(data2, threshold = u2, ne = ne2)
+    out2 <- gpd(data2, threshold = u2, nextremes = ne2)
     par.ests2 <- out2$par.ests
     par.ses2 <- out2$par.ses
 

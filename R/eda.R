@@ -75,9 +75,9 @@ function(data, block, start = 5, end = NA, reverse = FALSE,
              axes = FALSE, ...)
     else plot(index, theta, type = "l", xlab = "", ylab = "", axes =
               FALSE, ...)
-    axis(1, at = index, lab = paste(K), tick = FALSE)
+    axis(1, at = index, labels = paste(K), tick = FALSE)
     axis(2)
-    axis(3, at = index, lab = paste(format(signif(un, 3))), tick = FALSE)
+    axis(3, at = index, labels = paste(format(signif(un, 3))), tick = FALSE)
     box()
     if(labels) {
       	ylabel <- paste("theta (", k, " blocks of size ", r, ")", sep = "")
@@ -134,10 +134,10 @@ function(data, option = c("alpha","xi","quantile"), start = 15, end = NA,
         plot(index, y, ylim = yrange, type = "l", xlab = "", ylab = "",
 	     axes = FALSE, ...)
     else plot(index, y, type = "l", xlab = "", ylab = "", axes = FALSE, ...)
-    axis(1, at = index, lab = paste(x), tick = FALSE)
+    axis(1, at = index, labels = paste(x), tick = FALSE)
     axis(2)
     threshold <- findthresh(data, x)
-    axis(3, at = index, lab = paste(format(signif(threshold, 3))),
+    axis(3, at = index, labels = paste(format(signif(threshold, 3))),
          tick = FALSE)
     box()
     if(ci && (option != "quantile")) {

@@ -356,7 +356,7 @@ function(data, p = 0.99, models = 30, start = 15, end = 500,
     }
     gpd.dummy <- function(nex, data)
     {
-	out <- gpd(data = data, nex = nex, information = "expected")
+	out <- gpd(data = data, nextremes = nex, information = "expected")
 	c(out$threshold, out$par.ests[1], out$par.ests[2],
           out$varcov[1, 1], out$varcov[2, 2], out$varcov[1, 2])
     }
@@ -402,9 +402,9 @@ function(data, p = 0.99, models = 30, start = 15, end = 500,
              axes = FALSE, ...)
     else plot(index, qest, type = "l", xlab = "", ylab = "",
               axes = FALSE, ...)
-    axis(1, at = index, lab = paste(exceed))
+    axis(1, at = index, labels = paste(exceed))
     axis(2)
-    axis(3, at = index, lab = paste(format(signif(thresh, 3))))
+    axis(3, at = index, labels = paste(format(signif(thresh, 3))))
     box()
     if(ci) {
        	lines(index, l, lty = 2, col = 2)
@@ -456,7 +456,7 @@ function(data, models = 30, start = 15, end = 500, reverse = TRUE, ci =
     x <- trunc(seq(from = min(end, length(data)), to = start, length = models))
     gpd.dummy <- function(nex, data)
     {
-        out <- gpd(data = data, nex = nex, information = "expected")
+        out <- gpd(data = data, nextremes = nex, information = "expected")
 	c(out$threshold, out$par.ests[1], out$par.ses[1])
     }
     mat <- apply(as.matrix(x), 1, gpd.dummy, data = data)
@@ -476,9 +476,9 @@ function(data, models = 30, start = 15, end = 500, reverse = TRUE, ci =
         plot(index, y, ylim = yrange, type = "l", xlab = "", ylab = "",
 	     axes = FALSE, ...)
     else plot(index, y, type = "l", xlab = "", ylab = "", axes = FALSE, ...)
-    axis(1, at = index, lab = paste(x), tick = FALSE)
+    axis(1, at = index, labels = paste(x), tick = FALSE)
     axis(2)
-    axis(3, at = index, lab = paste(format(signif(thresh, 3))), tick = FALSE)
+    axis(3, at = index, labels = paste(format(signif(thresh, 3))), tick = FALSE)
     box()
     if(ci) {
         lines(index, u, lty = 2, col = 2)
