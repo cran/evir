@@ -1,4 +1,4 @@
-4e63254ea028dac9bc48552cda39e6c7 *DESCRIPTION
+a16b5f8815f84cd890bbf2ce6c6ddeb8 *DESCRIPTION
 72c55e5be32d432aa0aa4ea293bbd0ee *NAMESPACE
 99ac81f92691ae38758bea76c92259c2 *R/bmax.R
 b33c77bf2753fc44d163a497cdbc7734 *R/bvpot.R
@@ -7,13 +7,13 @@ b33c77bf2753fc44d163a497cdbc7734 *R/bvpot.R
 f2099c7d0f999921ec4620065a9240d3 *R/pot.R
 958bc4c08d6de91418f763699761330f *R/potpp.R
 e2a5aac91c2c2c105f88a32752a3b6b2 *R/second.R
-268d5ba0a4432d295455e5cbfb796984 *data/bmw.rda
-3f8285698ae2940d11ae440aa230f82d *data/danish.rda
-8a0ccad628dd7c51b89e3cd6a93a4a24 *data/nidd.annual.rda
-298fd83ff83da11d7c07a6590b2880a8 *data/nidd.thresh.rda
-caa30846adcf5a2e56529665df5bef61 *data/siemens.rda
-7b9e3f41ada64cce569fb8f80adbb3d8 *data/sp.raw.rda
-00d3178f59c534c4971d9c8f1180bb5c *data/spto87.rda
+53573ac05f39c53e98f6a2cd252653af *data/bmw.rda
+0f8d562c300fc14ef17e68cc646670bf *data/danish.rda
+968aa27f624a51584c980c1d48e5422d *data/nidd.annual.rda
+6ee00770b4bdce4af5aac2c573db7db3 *data/nidd.thresh.rda
+33689f9465ab01eaa92ccd453dd91dbc *data/siemens.rda
+39bfaa05bccac33cf8e718f6eb3d23bf *data/sp.raw.rda
+5991553cc255784f4ef99867317a81a8 *data/spto87.rda
 2c694f17bf7d908ca94db622292bc418 *demo/00Index
 7674d5c6a25047fbc9477d9e2f25e459 *demo/bvpot.R
 0d3c8f6c5b6e137fb788e89a38b3e332 *demo/minima.sp.R
